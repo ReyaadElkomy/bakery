@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+   
+    font-size: 20px;
+    
+}
+/* Start NavBar */
+.cls{
+    clear: both;
+}
+.navbar{
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.navBarContainer{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+.siteBrand{
+    float: left;
+    width: 40%;
+}
+.siteBrand img{
+    width: 40%;
+}
+
+.siteLinks ul li{
+    list-style-type: none;
+    float: right;
+    padding-left: 40px;
+    
+}
+
+.siteLinks ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.siteLinks ul li a:hover{
+    color:#976e30;
+}
+/* End Nav Bar */
+
+/* Start familySection */
+.familySection{
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: cover;
+
+}
+
+.familyContent{
+   
+    text-align: center;
+    color: #fff;
+   
+}
+
+.familyContent p{
+    margin-top: 0px;    
+    line-height: 50px;
+    font-size: 25px;
+}
+.familyContent .pWelcome{
+    padding-top: 17%;
+}
+.familyContent h1{
+    font-size: 60px;
+    margin: 0px;
+}
+.familyContent button{
+    padding: 20px 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #8e7754;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.familyContent .btnCustom{
+   background-color: rgba(0,0,0,0.1);
+   border: 2px solid #fff;
+}
+
+.familyContent button:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* End familySection */
+
+/* Start SideBar */
+.sideBar{
+    width: 40px;
+    height: 70px;
+    background-image: url(../images/sidebar.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    background-color: #fbfbfb;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #f9f8f8;
+    position: fixed;
+    right: 0px;
+    top: 200px;
+}
+
+/* End SideBar */
+
+
+/* Start whoWeAre */
+.whoWeAre{
+    width: 90%;    
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.whoWeAreImage{
+    width: 50%;
+    float: left;
+}
+.whoWeAreImage img{
+    width: 100%;
+}
+
+.whoWeAreDetails{
+    width: 50%;
+    float: left;
+    padding-left: 80px;
+}
+
+.whoWeAreDetails h2, h5{
+    font-weight: 100;
+    font-family: "Alegreya Sans";
+}
+.whoWeAreDetails h2 {
+    padding-top: 70px;
+}
+.whoWeAreDetails p{
+    color: #686868;
+}
+.whoWeAreDetails h5{
+    color: #686868;
+}
+/* End whoWeAre */
+
+/* Start Media Query For whoWeAre */
+@Media Screen and (max-width: 500px)
+{
+    .whoWeAreImage
+    {
+        width: 100%;
+    }
+    .whoWeAreDetails
+    {
+        width: 100%;
+    }
+}
+
+@Media Screen and (min-width: 501px) and (max-width: 800px)
+{ 
+    .whoWeAreDetails h2 {
+        padding-top: 5px;
+    }
+
+    .whoWeAreDetails h2, h5, p{
+       font-size: 12px;
+    }
+}
+/* End Media Query For whoWeAre */
+
+/* Start ourLocation */
+.ourLocation
+{
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.ourLocationDetails{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.ourLocationDetails h2{
+    font-weight: 100;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 33px;
+    padding-top: 60px;
+}    
+
+.ourLocationDetails p{
+    font-weight: 100;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+    line-height: 30px;
+  
+} 
+.ourLocationImage{
+    width: 50%;
+    float: left;
+}
+
+.ourLocationImage img{
+    width: 100%;
+}
+/* End ourLocation*/
+
+/* Start Media Query For OurLocation  */
+@Media Screen and (max-width: 500px)
+{
+    .ourLocationDetails
+    {
+        width: 100%;
+    }
+    .ourLocationImage
+    {
+        width: 100%;
+    }
+}
+
+@Media Screen and (min-width: 501px) and (max-width: 800px)
+{ 
+    .ourLocationDetails h2 {
+        padding-top: 5px;
+    }
+
+    .ourLocationDetails h2, p{
+       font-size: 12px;
+    }
+}
+/* End Media Query For OurLocation */
+
+/* Start ourBaking */
+.ourBaking{
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 80px;
+}
+
+.bakingContainer{
+    width: 90%;
+    margin: auto;
+    height: 700px;
+    text-align: center;
+    
+}
+.bakingContainer h3{
+    font-weight: 100;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.bakingContainer p{
+    font-weight: 100;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+    line-height: 30px;
+}
+
+.bakingImages{
+    width: 33%;
+    padding: 20px;
+    float: left;
+}
+.bakingImages img{
+    width: 100%;
+}
+.bakingImages h5{
+    font-size: 20px;
+}
+/* End ourBaking */
+
+/* Start Media Query For Our Baking */
+@Media Screen and (max-width: 500px)
+{
+    .bakingImages
+    {
+        width: 100%;
+    }
+   
+}
+
+@Media Screen and (min-width: 501px) and (max-width:800px)
+{
+    .bakingImages
+    {
+        width: 50%;
+    }
+   
+}
+/* End Media Query For Our Baking */
+
+/* Start contactInformation */
+.contactInformation
+{
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.contactInformationDetails{
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.contactInformationDetails h2{
+    font-weight: 100;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 33px;
+    padding-top: 60px;
+}    
+
+.contactInformationDetails p{
+    font-weight: 100;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+    line-height: 30px;
+  
+} 
+.contactInformationMaps{
+    width: 50%;    
+    float: left;
+}
+
+.contactInformationMaps iframe{
+    width: 100%;
+    height: 500px;
+}
+/* End ourLocation*/
+/* Start Media Query For Our Baking */
+@Media Screen and (min-width: 500px) and (max-width: 700px)
+{
+    .contactInformationDetails
+    {
+        width: 100%;
+    }
+    .contactInformationMaps
+    {
+        width: 100%;
+    }
+   
+}
+
+/* End Media Query For Our Baking */
+
+
+/* Start Footer Links */
+.footerLinks{
+    background-color: #403d38;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+   
+}
+
+.footerLinks .footerContent{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+.footerLinks .footerContent .aboutUs{
+  
+    width: 25%;
+    float: left;
+}
+.aboutUs h3{
+    color: #fff;
+    font-family: "Alegreya";
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.aboutUs p{
+    color: #969696;
+    font-size: 16px;
+    line-height: 25px;
+}
+.aboutUs .p1{
+    margin-bottom: 20px;
+}
+.aboutUs hr{
+    border: 1px solid rgba(255,255,255,0.05);
+    margin: 10px 30px 5px 0px;
+}
+
+
+.aboutUs  a{
+    color: #969696;
+}
+.aboutUs  a:hover{
+    color: #fff;
+}
+.aboutUs .contactDetails{
+background-image: url(../images/contact-details-map.png);
+background-repeat: no-repeat;
+background-position: center center;
+}
+/* End Footer Links */
+
+/* Start footerBrand */
+.footerBrand{
+    width: 100%;
+    height: 300px;
+    background-color: #353330;
+    overflow: hidden;
+}
+
+.footerBrand .footerBrandContent{
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+}
+.footerBrandContent p{
+    font-size: 17px;
+    font-family: 'Alegreya';
+    font-weight: 100;
+    margin-top: 40px;
+    color: #969696;
+}
+/* End footerBrand */
+
+/* Start Media Query For Footer */
+@Media Screen and (min-width: 500px) and (max-width: 700px)
+{
+    .footerLinks .footerContent .aboutUs
+    {
+        width: 50%;
+    }
+      
+}
+
+/* End Media Query For Footer */
